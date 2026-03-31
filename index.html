@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Élections Paris 2026 — DOM</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="exercise-wrap">
+      <div class="ex-header">
+        <span class="ex-tag">Exercice · DOM</span>
+        <h1>Élections municipales Paris 2026</h1>
+        <p>Modifier le HTML depuis JavaScript</p>
+      </div>
+
+      <!-- Question 1 -->
+      <div class="question-block">
+        <div class="q-label">01 — Afficher un texte</div>
+        <p class="q-desc">
+          Depuis <code>index.js</code>, modifiez le contenu de la balise
+          ci-dessous pour afficher le texte :
+          <strong>"Résultats du premier tour"</strong>
+        </p>
+        <div class="dom-zone">
+          <p class="dom-label">→ rendu HTML</p>
+          <p id="titre"></p>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question-block">
+        <div class="q-label">02 — Afficher le premier candidat</div>
+        <p class="q-desc">
+          Affichez le <strong>nom</strong> et le
+          <strong>nombre de votes</strong> du premier candidat du tableau dans
+          la balise ci-dessous.
+        </p>
+        <div class="dom-zone">
+          <p class="dom-label">→ rendu HTML</p>
+          <p id="premier"></p>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question-block">
+        <div class="q-label">03 — Afficher tous les candidats</div>
+        <p class="q-desc">
+          Affichez <strong>tous les candidats</strong> sous forme de liste
+          <code>&lt;ul&gt;&lt;li&gt;</code> dans la balise ci-dessous. Utilisez
+          un <code>for...of</code> et construisez le HTML morceau par morceau.
+        </p>
+        <div class="q-hint">
+          💡 Créez une variable <code>html = ""</code> avant la boucle, ajoutez
+          un <code>&lt;li&gt;</code> à chaque tour, puis injectez avec
+          <code>.innerHTML</code>
+        </div>
+        <div class="dom-zone">
+          <p class="dom-label">→ rendu HTML</p>
+          <ul id="liste"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
